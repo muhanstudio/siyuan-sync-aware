@@ -1,15 +1,11 @@
-> [更新日志](CHANGELOG.md)
+> [Update Log](CHANGELOG.md)
 
-## 【强烈建议】
-每个设备首次使用先去“设置-云端-云端同步模式”设置同步模式为完全手动，由插件完全接管同步感知，使用体验更佳，有效解决冲突问题
-
-## 插件介绍 
-主要功能为在非官方订阅的情况下进行S3/WEBDAV的同步感知，同时也可以对官方订阅的同步功能进行优化加速。
-
-## 使用教程
-首先切换为完全手动同步，如果你什么都不会，打开插件设置（移动端开启浏览器访问，然后切换到电脑模式修改），把你的所有设备的【中心感知密钥】填成一样的，然后点击保存，然后点击保存，然后点击保存，就可以了
-
-## 未来计划
-分布式节点感知
-
-多设备状态可见
+## [Highly recommended]
+For the first time, go to "Settings-Cloud-Cloud Sync Mode" to set the synchronization mode to completely manual, and the plug-in will completely take over the synchronization awareness, which will provide a better user experience and effectively resolve conflict issues.
+## Plug-in Introduction 
+The main function is to realize S3/WEBDAV synchronization awareness when an unofficial subscription is made. At the same time, it can also optimize and accelerate the synchronization function of an official subscription.
+## Usage Tutorial
+First switch to full manual synchronization. If you don't know anything, open the plug-in settings (mobile enables browser access, and then switch to computer mode to modify), fill in the "Central Awareness Key" of all your devices as the same, and then click Save, then click Save, and you will be done
+## Future plans
+Distributed node awareness
+Multiple device status visible
