@@ -1,0 +1,35 @@
+{
+  "name": "siyuan-sync-aware",
+  "author": "muhanstudio",
+  "url": "https://github.com/muhanstudio/siyuan-sync-aware",
+  "version": "0.0.1",
+  "minAppVersion": "2.10.10",
+  "backends": [
+    "all"
+  ],
+  "frontends": [
+    "all"
+  ],
+  "displayName": {
+    "default": "sync-aware",
+    "zh_CN": "同步感知"
+  },
+  "description": {
+    "default": "The main function is to realize S3/WEBDAV synchronization awareness when an unofficial subscription is made. At the same time, the synchronization function of an official subscription can also be optimized. ",
+    "zh_CN": "主要功能为在非官方订阅的情况下进行S3/WEBDAV的同步感知，同时也可以对官方订阅的同步功能进行优化加速。"
+  },
+  "readme": {
+    "default": "README.md",
+    "zh_CN": "README_zh_CN.md"
+  },
+  "funding": {
+    "openCollective": "",
+    "patreon": "",
+    "github": "",
+    "custom": [
+    ]
+  },
+  "keywords": [
+    "server", "服务器", "sync", "同步", "感知", "aware"
+  ]
+}
