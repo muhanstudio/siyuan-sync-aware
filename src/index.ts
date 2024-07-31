@@ -1,7 +1,8 @@
 import {
   Plugin,
   Setting,
-  showMessage
+  showMessage,
+  Dialog
 } from "siyuan";
 
 import "./index.scss";
@@ -32,8 +33,32 @@ export default class synca extends Plugin {
   async syncmode() {
     if (!await this.loadData("synclasttime")) {
       showMessage("【重要】首次使用建议先去“设置-云端-云端同步模式”设置同步模式为完全手动，插件完全接管同步，使用体验更佳", 999999);
-      alert("【重要】首次使用建议先去“设置-云端-云端同步模式”设置同步模式为完全手动，插件完全接管同步，使用体验更佳");
+      this.showDialog();
     }
+  }
+  private showDialog() {
+    const dialog = new Dialog({
+      title: "同步感知-请修改你的设置来配合插件使用",
+      content: `<div class="b3-dialog__content">
+<div>检测到你为第一次使用</div>
+<div class="fn__hr"></div>
+<div class="plugin-sample__time">请按照以下步骤配置插件</div>
+<div class="fn__hr"></div>
+<div class="fn__hr"></div>
+<div>第一步</div>
+<div class="fn__hr"></div>
+<div class="plugin-sample__time">检查你的同步设置是否设置为完全手动</div>
+<div class="fn__hr"></div>
+<div class="fn__hr"></div>
+<div>第二步</div>
+<div class="fn__hr"></div>
+<div class="plugin-sample__time">查看本插件的设置项，按选项描述配置好<span id="time"></span></div>
+<div class="fn__hr"></div>
+<div class="fn__hr"></div>
+</div>`,
+      width: this.isMobile ? "92vw" : "560px",
+      height: "540px",
+    });
   }
   async push() {
     try {

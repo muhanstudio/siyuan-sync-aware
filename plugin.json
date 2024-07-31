@@ -2,7 +2,7 @@
   "name": "siyuan-sync-aware",
   "author": "muhanstudio",
   "url": "https://github.com/muhanstudio/siyuan-sync-aware",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "minAppVersion": "2.10.10",
   "backends": [
     "all"
